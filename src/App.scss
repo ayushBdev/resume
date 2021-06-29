@@ -1,0 +1,13 @@
+@mixin flex ($a, $b, $c) {
+    display: flex;
+    flex-direction: $a;
+    justify-content: $b;
+    align-items: $c;
+}
+
+.app {
+    @include flex(row,center,center);
+    width: 98.78vw;
+    height: fit-content;
+    background-color: #252B46;
+}

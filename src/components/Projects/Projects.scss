@@ -1,0 +1,83 @@
+@mixin flex ($a, $b, $c) {
+    display: flex;
+    flex-direction: $a;
+    justify-content: $b;
+    align-items: $c;
+}
+
+.project_div {
+    @include flex (column, space-around, flex-start);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.project_head {
+    margin-left: 5px;
+    margin-bottom: -25px;
+    p {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 5px 10px;
+        background-color: #FBDF00;
+        border-radius: 5px;
+    }
+}
+
+.project_menu {
+    @include flex(column, space-around, flex-start);
+    width: 100%;
+}
+
+.project_data {
+    @include flex (column, center, flex-start);
+    width: 100%;
+}
+
+.project_title {
+    p {
+        font-size: 13px;
+        margin-left: 5px;
+        font-weight: bold;
+    }
+}
+
+.project_desc {
+    @include flex (row, space-between, center);
+    width: 100%;
+    margin-top: -10px;
+    div:nth-child(1) {
+        @include flex (column, center, flex-start);
+        height: 100%;
+        a {
+            @include flex (row, center, center);
+            text-decoration: none;
+            color: black;
+            img {
+                width: 14px;
+                height: auto;
+            }
+            p {
+                margin-left: 5px;
+                font-size: 11.5px;
+                letter-spacing: 0.5px;
+                font-weight: bold;
+                color: black;
+                font-family: 'Heebo', sans-serif;
+            }
+        }
+        p {
+            margin-left: 5px;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+            color: #5E5E5E;
+        }
+    }
+    div:nth-child(2) {
+        img {
+            width: 70px;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@mixin flex ($a, $b, $c) {
+    display: flex;
+    flex-direction: $a;
+    justify-content: $b;
+    align-items: $c;
+}
+
+.education_div {
+    @include flex (column, flex-start, flex-start);
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+.education_head {
+    p {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 5px 10px;
+        background-color: #FBDF00;
+        border-radius: 5px;
+    }
+}
+
+.education_menu {
+    @include flex (column, space-between, flex-start);
+    width: 100%;
+    height: 60%;
+    letter-spacing: 0.5px;
+    margin-top: 18px;
+    p:nth-child(1) {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    p:nth-child(2) {
+        font-size: 14px;
+    }
+    .edu_content {
+        @include flex (row, space-between, center);
+        width: 100%;
+        p {
+            color: #50939A;
+            font-size: 13px;
+            font-weight: normal;
+        }
+    }
+}

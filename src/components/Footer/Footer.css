@@ -1,0 +1,13 @@
+.footer_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #EDF1FA;
+  border-top: 1px solid #1D47C2;
+}
+.footer_div img {
+  width: 30px;
+  height: auto;
+}/*# sourceMappingURL=Footer.css.map */

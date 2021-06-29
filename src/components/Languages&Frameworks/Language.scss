@@ -1,0 +1,46 @@
+@mixin flex ($a, $b, $c) {
+    display: flex;
+    flex-direction: $a;
+    justify-content: $b;
+    align-items: $c;
+}
+
+.language_div {
+    @include flex (column, space-around, flex-start);
+    width: 100%;
+    height: 100%;
+}
+
+.language_head {
+    margin-left: 15px;
+    p {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 5px 10px;
+        background-color: #FBDF00;
+        border-radius: 5px;
+    }
+}
+
+.language_menu {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.language_data {
+    @include flex (row, flex-start, center);
+    img {
+        width: 20px;
+        height: auto;
+    }
+    p {
+        margin-left: 5px;
+        font-size: 12.5px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
+}

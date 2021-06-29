@@ -1,0 +1,17 @@
+@mixin flex ($a, $b) {
+    display: flex;
+    justify-content: $a;
+    align-items: $b;
+}
+
+.footer_div {
+    @include flex (center, center);
+    width: 100%;
+    height: 100%;
+    background-color: #EDF1FA;
+    border-top: 1px solid #1D47C2;
+    img {
+        width: 30px;
+        height: auto;
+    }
+}

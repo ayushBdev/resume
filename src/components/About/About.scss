@@ -1,0 +1,29 @@
+@mixin flex ($a, $b) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $a;
+    align-items: $b;
+}
+
+.about_div {
+    @include flex (space-around, flex-start);
+    width: 100%;
+    height: 100%;
+    padding: 0px 15px;
+}
+
+.about_head {
+    p {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 5px 10px;
+        background-color: #FBDF00;
+        border-radius: 5px;
+    }
+}
+
+.about_menu {
+    font-size: 15px;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+}

@@ -1,0 +1,11 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 98.78vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #252B46;
+}/*# sourceMappingURL=App.css.map */
