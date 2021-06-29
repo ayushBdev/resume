@@ -1,6 +1,6 @@
 # Resume - React JS
 
-[Live Preview]((https://ayushbhatt-resume.netlify.app)
+[Live Preview](https://ayushbhatt-resume.netlify.app)
 
 ![Homepage](https://res.cloudinary.com/ayushbhatt/image/upload/v1624882887/Resume/brfzpir3xpcihtatcf7j.png)
 
